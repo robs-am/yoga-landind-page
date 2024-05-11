@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <div className="overflow-hidden">react app</div>
+      <Hero />
     </>
   );
 }
