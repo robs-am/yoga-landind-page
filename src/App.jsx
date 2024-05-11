@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <Hero />
+      <div className="h-[2000px]"></div>
     </>
   );
 }

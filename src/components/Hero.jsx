@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import Image from '../assets/img/hero/menina.svg';
+import Image from '../assets/img/hero/menina-2.svg';
 import Header from './Header';
 
 function Hero() {
@@ -29,13 +29,17 @@ function Hero() {
                 </button>
               </div>
             </div>
-            <div>
-              <Parallax
-                className="w-full h-full p-28 lg:p-16"
-                bgImage={Image}
-                bgImageAlt="yoga girl"
-                strength={200}
-              />
+            <div className="w-full  lg:bg-none lg:w-auto">
+              <div>
+                <div>
+                  <Parallax
+                    className="w-full h-full p-28 lg:p-16"
+                    bgImage={Image}
+                    bgImageAlt="yoga girl"
+                    strength={200}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
