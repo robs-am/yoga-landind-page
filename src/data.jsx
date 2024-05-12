@@ -6,6 +6,11 @@ import CourseImage1 from '../src/assets/img/courses/course-1.png';
 import CourseImage2 from '../src/assets/img/courses/course-2.png';
 import CourseImage3 from '../src/assets/img/courses/course-3.png';
 
+export const hero = {
+  title: 'Yoga to\n Release Stress',
+  desc: 'By sharing our practice with you we hope to promote self-care and well-being. Learn more about yoga and become more mindful and compassionate.',
+};
+
 export const navigation = [
   {
     name: 'Home',
