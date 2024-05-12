@@ -26,10 +26,10 @@ function Header() {
         {/* buttons */}
         <div className="flex gap-x-4 lg:gap-x-9">
           <button className="text-heading font-medium text-sm lg:text-base hover:text-orange transition">
-            btn 1
+            Sign in
           </button>
           <button className="btn btn-md lg:px-[30px] bg-orange-100 border border-orange text-orange font-medium textt-sm lg:text-base hover:bg-orange-200 hover:text-white transition">
-            btn 2
+            Sign up
           </button>
         </div>
         <NavMobile />
