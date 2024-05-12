@@ -9,8 +9,8 @@ function Header() {
   return (
     <header
       className={`${
-        header ? 'top-0' : 'top-9'
-      } max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 transtion-all duration-500 fixed bg-white w-full flex items-center justify-between`}
+        header ? 'top-0' : 'lg:top-9 max-w-none'
+      } max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 transtion-all duration-500 fixed z-10 bg-white w-full flex items-center justify-between`}
     >
       <div className="flex items-center">
         {/* Logo */}

@@ -23,6 +23,9 @@ module.exports = {
         200: '#FFB081',
         hover: '#FF9454',
       },
+      gray: {
+        DEFAULT: '#333236',
+      },
       green: {
         DEFAULT: '#258675',
         100: '#D4EEE9',
@@ -35,7 +38,7 @@ module.exports = {
         100: '#FFE9E4',
         200: '#FEAEA3',
       },
-      heading: '#1C0A0A',
+      heading: '#333236',
       paragraph: '#584F49',
       stroke: {
         1: '#B0B4C0',
@@ -53,6 +56,7 @@ module.exports = {
         cardsBg: "url('/src/assets/img/cards/bg.png')",
         video: "url('/src/assets/img/video/video.png')",
         contact: "url('/src/assets/img/contact/bg.png')",
+        hero: "url('/src/assets/img/hero/girlYoga.jpeg')",
       },
       boxShadow: {
         primary: '0px 18px 36px rgba(0, 0, 0, 0.05)',

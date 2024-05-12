@@ -18,7 +18,7 @@
     @apply text-heading;
   }
   .h1 {
-    @apply text-[36px] leading-[46px] lg:text-[70px] lg:leading-[80px] font-extrabold;
+    @apply text-[36px] leading-[46px] lg:text-[60px] lg:leading-[80px] font-semibold;
   }
   .h2 {
     @apply text-[26px] leading-[36px] lg:text-[50px] lg:leading-[60px] font-bold;
@@ -49,5 +49,12 @@
   }
   .form-control {
     @apply h-[58px] border border-stroke-2 rounded pl-6 placeholder:text-paragraph text-paragraph outline-none;
+  }
+  .container {
+    background-position: center right -70px;
+
+    @media (min-width: 1024px) {
+      background-position: center;
+    }
   }
 }
