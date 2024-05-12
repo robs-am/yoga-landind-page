@@ -3,15 +3,18 @@ import { BiMenu } from 'react-icons/bi';
 import { navigation } from '../data';
 
 function NavMobile() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className="cursor-pointer text-4xl text-heading ml-[10px] lg:hidden">
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="cursor-pointer text-4xl text-heading ml-[10px] lg:hidden"
+      >
         <BiMenu />
       </div>
       <ul
         className={`${
-          open ? 'max-h-60 p-8' : 'max-h-0'
+          isOpen ? 'max-h-60 p-8' : 'max-h-0'
         } flex flex-col absolute w-full bg-white top-24 shadow-primary space-y-6 overflow-hidden transition-all`}
       >
         {navigation.map((item, index) => {
