@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
+      <div className="overflow-hidden"></div>
       <Hero />
       <div className="h-[2000px]"></div>
     </>
