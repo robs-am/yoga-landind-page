@@ -8,9 +8,9 @@ function Hero() {
     <section className="min-h-[618px] lg:min-h-[815px] pt-9 ">
       <div className="container mx-auto flex flex-col items-start">
         <Header />
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col mt-28 lg:flex-row">
           <div className="intro flex flex-col items-start text-left">
-            <h1 className="h1 mb-3 lg:mb-6">
+            <h1 className="h1 mb-3 lg:mb-6 lg:mt-12">
               Yoga to <br /> Release Stress
             </h1>
             <p className="mb-6 lg:mb-12 max-w-md lg:text-lg">
@@ -20,7 +20,7 @@ function Hero() {
               mindful and compassionate.
             </p>
             <div>
-              <div className="btn-group mb-12 space-x-4">
+              <div className="btn-group mb-8 space-x-4">
                 <button className="btn btn-sm lg:btn-lg btn-orange">
                   Get started
                 </button>

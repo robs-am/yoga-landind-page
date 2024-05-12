@@ -1,4 +1,3 @@
-import './App.css';
 // import components
 import Hero from './components/Hero';
 import Cards from './components/Cards';
