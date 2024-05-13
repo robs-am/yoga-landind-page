@@ -7,7 +7,7 @@
     @apply font-primary text-paragraph;
   }
   a {
-    @apply hover:text-orange transition;
+    @apply hover:text-gray-500 transition;
   }
   h1,
   h2,
