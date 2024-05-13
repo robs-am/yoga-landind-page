@@ -10,7 +10,7 @@ function Hero() {
         <div className="flex justify-center">
           <Header />
           <div className="flex flex-col mt-28 lg:flex-row">
-            <div className="intro flex flex-col items-start justify-center text-left">
+            <div className="intro flex flex-col items-start justify-center text-left max-w-80 lg:max-w-none">
               <h1 className="h1  mb-3 lg:mb-6">
                 Yoga to <br /> Release Stress
               </h1>
@@ -31,7 +31,7 @@ function Hero() {
             </div>
           </div>
           {/* image */}
-          <div className="w-full lg:w-auto">
+          <div className="lg:w-auto">
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="h-[234px] lg:w-[504px] lg:h-[744px] lg:mt-0">
                 {/* <Parallax

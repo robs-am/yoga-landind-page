@@ -31,7 +31,7 @@ function Header() {
     <header
       className={`transition-all ease-out duration-100 ${
         isHeaderVisible ? 'top-0 lg:top-3' : '-top-full'
-      }  lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 fixed z-10 bg-white w-full flex items-center justify-between`}
+      }  lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 fixed z-10 bg-white w-full flex items-center justify-between w-full`}
     >
       <div className="flex items-center">
         {/* Logo */}
