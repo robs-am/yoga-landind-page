@@ -20,7 +20,7 @@ function Hero() {
               </p>
               <div>
                 <div className="btn-group mb-8 space-x-4">
-                  <button className="btn btn-sm lg:btn-lg text-white bg-gray">
+                  <button className="btn btn-sm lg:btn-lg text-white bg-gray hover:bg-gray-900 transition">
                     Get started
                   </button>
                   <button className="btn btn-sm lg:btn-lg text-gray bg-transparent border border-stroke-1 px-4 hover:bg-stroke-3 transition">

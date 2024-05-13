@@ -33,7 +33,7 @@
     @apply py-[150px];
   }
   .btn {
-    @apply font-medium rounded text-base bg-shape;
+    @apply font-medium rounded text-base bg-gray;
   }
   .btn-sm {
     @apply h-[48px] px-[25px];
