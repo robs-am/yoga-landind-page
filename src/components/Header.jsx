@@ -1,16 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
-
 import Logo from '../assets/img/logo.png';
 
 function Header() {
-  const [header, setHeader] = useState(false);
+  const [isHeaderVisible, setHeaderVisibility] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingDown = prevScrollPos < currentScrollPos;
+      const isScrolledToTop = currentScrollPos === 0;
+
+      if (isScrolledToTop) {
+        setHeaderVisibility(true);
+      } else {
+        setHeaderVisibility(isScrollingDown);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
     <header
-      className={`${
-        header ? 'top-0' : 'lg:top-9 max-w-none'
-      } max-w-[90vw] lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 transtion-all duration-500 fixed z-10 bg-white w-full flex items-center justify-between opacity-95`}
+      className={`transition-all ease-out duration-100 ${
+        isHeaderVisible ? 'top-0 lg:top-5' : '-top-full'
+      }  lg:max-w-[1170px] mx-auto rounded-md h-[90px] shadow-primary px-4 lg:px-8 x-20 fixed z-10 bg-white w-full flex items-center justify-between`}
     >
       <div className="flex items-center">
         {/* Logo */}
