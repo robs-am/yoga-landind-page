@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
-import Logo from '../assets/img/logo.png';
+import Logo from '../assets/img/logo2.png';
 
 function Header() {
   const [isHeaderVisible, setHeaderVisibility] = useState(true);
